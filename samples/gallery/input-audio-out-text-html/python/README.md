@@ -29,9 +29,9 @@ pip3 install websockets //安装websocket服务依赖
 
 当您点击“开始录音”按钮后，网页会和python websocket服务创建连接，开始从麦克风录制音频，并将录音实时的发送给websocket服务。服务器会调用paraformer-realtime-v2语音识别模型，并将实时语音识别结果返回给网页展示。实时识别每一句的结果会在同一行内不断更新，直到分句后进入下一行。
 
-首先，请运行`demo_server.py`，默认会在本地的9090端口运行websocket服务。
+首先，请运行`server.py`，默认会在本地的9090端口运行websocket服务。
 ```
-python demo_server.py
+python server.py
 ```
 
 之后请在本目录运行一个http服务，用于支持通过浏览器访问当前目录的文件。
